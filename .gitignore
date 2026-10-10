@@ -1,0 +1,4 @@
+# Ignore raw data files to allow smooth git push to GitHub/Netlify/Vercel
+data/
+*.pyc
+__pycache__/
