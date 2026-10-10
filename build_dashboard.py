@@ -1607,10 +1607,21 @@ html_code = f'''<!DOCTYPE html>
             <input type="file" id="csvFileInput" accept=".csv" multiple style="display:none;" onchange="handleMultipleFileSelect(event)">
         </div>
 
+        <!-- Official Open Data Download Link -->
+        <div style="margin-top:10px; margin-bottom:12px; padding:10px 12px; background:var(--bg-card-subtle); border-radius:var(--radius-sm); border:1px solid var(--border-color); display:flex; align-items:center; justify-content:space-between; gap:10px; font-size:0.78rem;">
+            <div style="display:flex; align-items:center; gap:8px; color:var(--text-muted);">
+                <i class="fa-solid fa-database" style="color:var(--primary); font-size:0.95rem;"></i>
+                <span>แหล่งดาวน์โหลดชุดข้อมูลต้นฉบับ: <strong>ระบบเฝ้าระวังการบาดเจ็บ (IS) กรมควบคุมโรค</strong></span>
+            </div>
+            <a href="https://data.go.th/dataset/gdpublish-injury-surveillance-is" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding:4px 10px; font-size:0.75rem; text-decoration:none; white-space:nowrap; display:inline-flex; align-items:center; gap:5px;">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> ดาวน์โหลดข้อมูล (data.go.th)
+            </a>
+        </div>
+
         <div style="margin-bottom:14px; font-size:0.8rem;">
             <div style="font-weight:600; margin-bottom:6px; color:var(--text-main);">รูปแบบการรวมข้อมูล:</div>
             <label style="display:inline-flex; align-items:center; gap:6px; margin-right:16px; cursor:pointer;">
-                <input type="radio" name="importMode" value="append" checked> รวมข้อมูลต่อท้ายพร้อมคัดกรองข้อมูลซ้ำ (Smart Deduplication)
+                <input type="radio" name="importMode" value="append" checked> รวมข้อมูลต่อท้ายพร้อมคัดกรองข้อมูลซ้ำ
             </label>
             <label style="display:inline-flex; align-items:center; gap:6px; cursor:pointer;">
                 <input type="radio" name="importMode" value="replace"> ล้างข้อมูลเดิมและแทนที่ด้วยชุดใหม่
